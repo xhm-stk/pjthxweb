@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import './index.css';
+import FirstPage from './FirstPage';
+import SecondPage from './SecondPage';
+import ThirdPage from './ThirdPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router classname="body">
+      <Routes>
+        <Route path="/" element={<FirstPage />} />
+        <Route path="/second" element={<SecondPage />} />
+        <Route path="/third" element={<ThirdPage />} />
+      </Routes>
+    </Router>
   );
 }
 
