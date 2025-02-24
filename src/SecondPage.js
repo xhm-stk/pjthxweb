@@ -26,7 +26,8 @@ function SecondPage() {
     <div class='App-header'>
         <div class="bgblue">
         <div class="card">
-            <h1 class="text">Congratulation { name }!</h1>
+            <h1 class="text">Congratulation 
+              { name }!</h1>
             <p class="text-full">{ getRandomValue(colors) }!</p>
         </div>
         </div>
